@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.hjjang.example.db1.mapper.NpPushAdmAppMapper">
+
+    <resultMap id="npPushAdmApp" type="npPushAdmApp">
+        <result column="APP_ID" property="appId" />
+        <result column="USER_ID" property="userId" />
+        <result column="CRET_DTM" property="cretDtm" />
+        <result column="MDFY_DTM" property="mdfyDtm" />
+    </resultMap>
+
+    <select id="selectAppById" parameterType="String" resultType="npPushAdmApp">
+        SELECT
+            APP_ID as appId,
+            USER_ID as userId,
+            CRET_DTM as cretDtm,
+            MDFY_DTM as mdfyDtm
+          FROM NP_PUSH_ADM_APP
+         WHERE APP_ID = #{id}
+    </select>
+
+    <select id="selectAll" resultType="npPushAdmApp">
+        SELECT
+            APP_ID,
+            USER_ID,
+            CRET_DTM,
+            MDFY_DTM
+          FROM NP_PUSH_ADM_APP
+         WHERE APP_ID = #{id}
+    </select>
+
+</mapper>

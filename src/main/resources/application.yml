@@ -1,0 +1,28 @@
+
+spring:
+  db1:
+    datasource:
+      driver-class-name: oracle.jdbc.OracleDriver
+      jdbc-url: jdbc:oracle:thin:@192.168.0.101:1521:orcl
+      username: NTIUSP_V2
+      password: ntiuspv2#123
+  db2:
+    datasource:
+      driver-class-name: oracle.jdbc.OracleDriver
+      jdbc-url: jdbc:oracle:thin:@192.168.0.101:1521:orcl
+      username: ntiusp06
+      password: NTIUSP06#123
+
+
+
+#mybatis:
+#  type-aliases-package: org.hjjang.example.db1.domain
+
+
+logging:
+  level:
+    org:
+      hjjang:
+        example:
+          repository:
+            mapper: TRACE

@@ -1,0 +1,7 @@
+
+<configuration>
+    <typeAliases>
+        <package name="org.hjjang.example.db1.domain.NpPushAdmApp" alias="npPushAdmApp"/>
+        <package name="org.hjjang.example.db2.domain.NpPushServer" alias="npPushServer"/>
+    </typeAliases>
+</configuration>
