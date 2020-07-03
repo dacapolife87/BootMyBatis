@@ -4,14 +4,14 @@ spring:
     datasource:
       driver-class-name: oracle.jdbc.OracleDriver
       jdbc-url: jdbc:oracle:thin:@192.168.0.101:1521:orcl
-      username: NTIUSP_V2
-      password: ntiuspv2#123
+      username: test
+      password: test123
   db2:
     datasource:
       driver-class-name: oracle.jdbc.OracleDriver
       jdbc-url: jdbc:oracle:thin:@192.168.0.101:1521:orcl
-      username: ntiusp06
-      password: NTIUSP06#123
+      username: test
+      password: test123
 
 
 
